@@ -33,6 +33,11 @@ public class Initialisation {
 	private VilleService villeService;
 	@Autowired
 	private UtilisateursServices us;
+	/*
+	 * @Autowired private ElectionsServices electionServices;
+	 * 
+	 * @Autowired private Proprietaire proprio;
+	 */
 
 	@PostConstruct
 	@Transactional(propagation = Propagation.REQUIRED)
@@ -80,5 +85,22 @@ public class Initialisation {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		/**
+		 * Pour les élections
+		 */
+
+		/*
+		 * log.info("Création d'une élection"); Election elec = new
+		 * Election(proprio, "super election", "ceci est une élection test");
+		 * try {
+		 *//** When: Lorsqu'on appel le service de création */
+		/*
+		 * electionServices.creer(elec);
+		 * 
+		 * } catch (ElectionInvalideException e) {
+		 *//** Then: Alors une exception est levée. *//*
+														 * e.printStackTrace();
+														 * }
+														 */
 	}
 }
